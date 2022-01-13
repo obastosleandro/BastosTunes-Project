@@ -1,8 +1,14 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './components/Routes';
 
 class App extends React.Component {
   render() {
-    return (<p>TrybeTunesSSS</p>);
+    return (
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
+    );
   }
 }
 

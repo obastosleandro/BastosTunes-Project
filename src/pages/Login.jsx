@@ -26,7 +26,7 @@ export default class Login extends Component {
 
   onClickButton(event) {
     event.preventDefault();
-    this.funcDisabledBttn();
+    this.saveUserName();
   }
 
   funcDisabledBttn() {

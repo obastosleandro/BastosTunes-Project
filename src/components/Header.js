@@ -8,7 +8,7 @@ export default class Header extends Component {
     super();
     this.state = {
       name: '',
-      load: true,
+      isLoading: true,
     };
     this.user = this.user.bind(this);
   }
@@ -19,29 +19,25 @@ export default class Header extends Component {
 
   async user() {
     const { name } = await getUser();
-    this.setState({ name, load: false });
+    this.setState({ name, isLoading: false });
   }
 
   render() {
     const {
       name,
-      load,
+      isLoading,
     } = this.state;
     return (
-      <>
-        <header data-testid="header-component">
-          {load ? <Loading /> : (
-            <div data-testid="header-user-name">{name}</div>
-          )}
-        </header>
-
-        <div>
-          <Link data-testid="link-to-search" to="/search">Search</Link>
-          <Link data-testid="link-to-favorites" to="/favorites">Favorites</Link>
-          <Link ata-testid="link-to-profile" to="/profile">Profile</Link>
-        </div>
-
-      </>
+      <header data-testid="header-component">
+        {isLoading ? <Loading /> : (
+          <div data-testid="header-user-name">{name}</div>
+        )}
+        <section>
+          <Link to="/search" data-testid="link-to-search">Search</Link>
+          <Link to="/favorites" data-testid="link-to-favorites">Favorites</Link>
+          <Link to="/profile" data-testid="link-to-profile">Profile</Link>
+        </section>
+      </header>
     );
   }
 }

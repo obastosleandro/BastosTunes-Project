@@ -79,7 +79,7 @@ export default class Login extends Component {
             type="submit"
             disabled={ disabledButton }
           >
-            Entrar
+            Login
           </button>
         </form>
 

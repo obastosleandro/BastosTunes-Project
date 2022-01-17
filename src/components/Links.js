@@ -5,7 +5,7 @@ export default class Links extends Component {
   render() {
     return (
       <>
-        <Link to="/serach">Search</Link>
+        <Link to="/search">Search</Link>
         <Link to="/profile">My Profile</Link>
         <Link to="/favorites">Favorites</Link>
       </>

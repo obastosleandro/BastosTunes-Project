@@ -1,5 +1,3 @@
-// Requisito 7, 8, 9 e 10 construidas com a ajuda de Denilson Santuchi[Turma16A].
-
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Loading from './Loading';

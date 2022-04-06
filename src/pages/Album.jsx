@@ -1,5 +1,3 @@
-// Desenvolvido com a ajuda de Denilson Santuchi.
-
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import Header from '../components/Header';

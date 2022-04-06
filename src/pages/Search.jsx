@@ -1,6 +1,3 @@
-// Requisito 5 construido com a ajuda de Denilson Santuchi e Fumagalli[Turma 16A].
-// Requisito 6 construido com a ajuda de Denilson Santuchi[Turma 16A].
-
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
